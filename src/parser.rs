@@ -1,7 +1,7 @@
 use petgraph::prelude::*;
 
-pub fn parse(input: &str) -> GraphMap<&str, (), Directed> {
-    let mut graph = GraphMap::<&str, (), Directed>::new();
+pub fn parse(input: &str) -> GraphMap<&str, (), Undirected> {
+    let mut graph = GraphMap::<&str, (), Undirected>::new();
 
     input
         .split('\n')
